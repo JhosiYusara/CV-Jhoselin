@@ -1,15 +1,9 @@
 <section class="skills" aria-labelledby="skills-heading">
             <h2 id="skills-heading"><i class="fas fa-tools icon-heading"></i> Habilidades</h2>
             <ul class="skills-list" aria-label="Lista de habilidades">
-                <li><i class="fab fa-html5"></i> HTML & CSS</li>
-                <li><i class="fas fa-database"></i> SQL e Informix</li>
-                <li><i class="fab fa-php"></i> PHP</li>
-                <li><i class="fas fa-project-diagram"></i> Gestión de proyectos</li>
-                <li><i class="fas fa-check-circle"></i> Revisión y calidad de sistemas</li>
-                <li><i class="fas fa-file-invoice-dollar"></i> Manejo de sistemas de facturación</li>
-                <li><i class="fas fa-money-check-alt"></i> Manejo de sistemas bancarios</li>
-                <li><i class="fas fa-lightbulb"></i> Resolución de Problemas</li>
-                <li><i class="fas fa-headset"></i> Atención al Cliente</li>
-                <li><i class="fas fa-boxes"></i> Control de inventarios</li>
+                <li *ngFor="let skill of skillsList">
+                    <i [class]="skill.icon"></i> {{ skill.name }}
+                </li>
             </ul>
 </section>
+
