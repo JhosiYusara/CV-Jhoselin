@@ -1,0 +1,98 @@
+/* Estilos comunes */
+section {
+  background: var(--background-color);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--accent-color);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icon-heading {
+  color: var(--accent-color);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--light-gray);
+  color: var(--text-color);
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+ul li:last-child {
+  border-bottom: none;
+}
+ul li i {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+/* Estilos específicos de experiencia */
+.experience-item {
+  background-color: var(--background-color);
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid var(--accent-color);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.experience-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+.experience-item h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+.experience-item .company {
+  font-weight: 600;
+  color: #07609c;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+.experience-item .dates {
+  font-style: italic;
+  color: #586a6b;
+  margin-bottom: 15px;
+  display: block;
+}
+.experience-item ul {
+  margin-top: 10px;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.experience-item ul li {
+  border-bottom: none;
+  padding: 3px 0;
+  list-style-type: disc;
+  color: var(--text-color);
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+.experience-item ul li i {
+  color: var(--accent-color);
+  margin-right: 5px;
+}

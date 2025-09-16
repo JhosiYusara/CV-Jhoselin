@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+/* fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+/* Estilos Generales */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #ecf0f1;
+  --text-color: #333333;
+  --background-color: #ffffff;
+  --accent-color: #3498db;
+  --light-gray: #bdc3c7;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+/* Enlaces para accesibilidad */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+.skip-link:focus {
+  position: static;
+  left: auto;
+  top: auto;
+  transform: translateY(10px);
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 10px;
+  }
+}

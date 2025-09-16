@@ -1,0 +1,98 @@
+/* Estilos comunes */
+section {
+  background: var(--background-color);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--accent-color);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icon-heading {
+  color: var(--accent-color);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--light-gray);
+  color: var(--text-color);
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+ul li:last-child {
+  border-bottom: none;
+}
+ul li i {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+/* Estilos específicos de habilidades */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+.skills-list li {
+  background: var(--secondary-color);
+  padding: 12px 15px;
+  text-align: center;
+  border-radius: 8px;
+  border-left: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #2c3e50;
+}
+.skills-list li:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+.skills-list li i {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+.skills-list li:hover i {
+  color: var(--background-color);
+}
+
+@media (min-width: 768px) {
+  .skills-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+@media (max-width: 767px) {
+  section {
+    padding: 20px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+}
