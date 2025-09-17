@@ -1,12 +1,46 @@
 <a href="#main-content" class="skip-link">Contenido principal</a>
 
-<app-header></app-header>
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <aside class="col-md-3 col-lg-2 bg-dark text-white min-vh-100 p-4">
+      <div class="text-center mb-4">
+        <img src="assets/img/foto1.jpeg" class="rounded-circle img-fluid mb-3" alt="Foto CV" width="120">
+        <h3 class="fw-bold">Jhoselin Yusara Limachi Quispe</h3>
+        <p class="text-muted">Técnico | Sistemas Informáticos</p>
+      </div>
 
-<main id="main-content" class="container">
-    <app-summary></app-summary>
-    <app-education></app-education>
-    <app-skills></app-skills>
-    <app-experience></app-experience>
-</main>
+      <hr class="border-light">
 
-<app-footer></app-footer>
+      <h5 class="mt-4">Contacto</h5>
+      <ul class="list-unstyled">
+        <li><i class="bi bi-envelope"></i> jhoselinca03@gmail.com</li>
+        <li><i class="bi bi-phone"></i> +591 72892698</li>
+        <li><i class="bi bi-geo-alt"></i> La Paz, Bolivia</li>
+        <li><a href="https://github.com/tuperfil" class="text-white"><i class="bi bi-github"></i> GitHub</a></li>
+        <li><a href="https://linkedin.com/in/tuperfil" class="text-white"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main content -->
+    <main id="main-content" class="col-md-9 col-lg-10 p-4">
+      <section class="mb-5">
+        <app-summary></app-summary>
+      </section>
+
+      <section class="mb-5">
+        <app-education></app-education>
+      </section>
+
+      <section class="mb-5">
+        <app-skills></app-skills>
+      </section>
+
+      <section class="mb-5">
+        <app-experience></app-experience>
+      </section>
+
+      <app-footer></app-footer>
+    </main>
+  </div>
+</div>
